@@ -29,6 +29,10 @@ def generate_times_from_sample(sample):
     return result
 
 
+def generate_times_from_distribution(distribution, length):
+    return generate_times_from_sample(random.choices(*distribution, k=length))
+
+
 def combine_lists(*args):
     result = []
     for lst in args:
