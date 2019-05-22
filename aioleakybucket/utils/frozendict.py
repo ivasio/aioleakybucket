@@ -1,10 +1,10 @@
-import collections
+import collections.abc
 
 
 BRACKETS = ('<', '>')
 
 
-class FrozenDict(collections.Mapping):
+class FrozenDict(collections.abc.Mapping):
     _api_version = 0
     _old_api_loaders = {}
 
